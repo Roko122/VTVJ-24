@@ -1,0 +1,6 @@
+# ÄLÄ MUOKKAA TÄTÄ TIEDOSTOA VAAN TEE KOPIO
+# Tee projektin juureen tästä tiedostosta kopio ja poista .example pääte lopusta
+# Lisää yhtäsuuruusmerkkien jälkeen tietokannan käyttäjänimi ja salasana.
+# Esim user=root ja password=root
+user=
+password=

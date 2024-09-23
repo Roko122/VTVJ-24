@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toimipiste.ToimipisteController">
+    <children>
+        <BorderPane layoutX="283.0" layoutY="145.0" prefHeight="622.0" prefWidth="953.0">
+            <center>
+                <TableView fx:id="tvTaulu" layoutX="288.0" layoutY="106.0" prefHeight="681.0" prefWidth="954.0" BorderPane.alignment="CENTER">
+                    <columns>
+                        <TableColumn fx:id="tcToimipiste" prefWidth="168.79998779296875" text="Toimipiste" />
+                        <TableColumn fx:id="tcOsoite" prefWidth="208.79995727539062" text="Osoite" />
+                  <TableColumn fx:id="tcPostinumero" prefWidth="130.4000244140625" text="Postinumero" />
+                  <TableColumn fx:id="tcPostitoimipaikka" prefWidth="163.20001220703125" text="Postitoimipaikka" />
+                  <TableColumn fx:id="tcKapasiteetti" prefWidth="87.20001220703125" text="Kapasiteetti" />
+                  <TableColumn fx:id="tcVuorokausihinta" prefWidth="106.39990234375" text="Vuorokausihinta" />
+                        <TableColumn fx:id="tcId" prefWidth="90.4000244140625" text="ID" />
+                    </columns>
+                </TableView>
+            </center>
+        </BorderPane>
+        <Button fx:id="btTallenna" layoutX="14.0" layoutY="457.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" text="Lisää toimipiste" />
+        <Button fx:id="btPeruuta" layoutX="141.0" layoutY="457.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" text="Peruuta" />
+        <Button fx:id="btMuokkaa" layoutX="14.0" layoutY="509.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" text="Tallenna muutokset" />
+        <Button fx:id="btPoista" layoutX="141.0" layoutY="509.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" text="Poista toimipiste" />
+        <TextField fx:id="tfHaku" layoutX="283.0" layoutY="96.0" prefHeight="40.0" prefWidth="194.0" promptText="Hae toimipisteen nimellä tai ID:llä" />
+        <TextField fx:id="tfToimipiste" layoutX="42.0" layoutY="149.0" prefHeight="40.0" prefWidth="194.0" promptText="Toimipiste" />
+        <TextField fx:id="tfOsoite" layoutX="42.0" layoutY="196.0" prefHeight="40.0" prefWidth="194.0" promptText="Osoite" />
+        <Text layoutX="32.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lisää uusi toimipiste &amp; muokkaa toimipisteen tietoja" textAlignment="CENTER" wrappingWidth="213.33670043945312">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Text>
+        <Label fx:id="lbToimipisteet" layoutX="640.0" layoutY="30.0" text="Toimipisteet">
+            <font>
+                <Font name="System Bold" size="38.0" />
+            </font>
+        </Label>
+        <Button fx:id="btTakaisin" alignment="CENTER" contentDisplay="TOP" layoutX="68.0" layoutY="33.0" mnemonicParsing="false" onAction="#btTakaisin" prefHeight="40.0" prefWidth="120.0" text="Takaisin">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+      <TextField fx:id="tfPostinumero" layoutX="42.0" layoutY="246.0" prefHeight="40.0" prefWidth="194.0" promptText="Postinumero" />
+      <TextField fx:id="tfPostitoimipaikka" layoutX="42.0" layoutY="297.0" prefHeight="40.0" prefWidth="194.0" promptText="Postitoimipaikka" />
+      <TextField fx:id="tfKapasiteetti" layoutX="42.0" layoutY="347.0" prefHeight="40.0" prefWidth="194.0" promptText="Kapasiteetti" />
+      <TextField fx:id="tfVuorokausihinta" layoutX="42.0" layoutY="398.0" prefHeight="40.0" prefWidth="194.0" promptText="Vuorokausihinta" />
+      <ListView fx:id="lvPalvelut" layoutX="16.0" layoutY="617.0" prefHeight="149.0" prefWidth="250.0">
+          <placeholder>
+              <Label text="Ei palveluita" />
+          </placeholder>
+      </ListView>
+      <Label fx:id="lbHaeAsiakkaita" layoutX="284.0" layoutY="74.0" prefHeight="21.0" prefWidth="187.0" text="Hae toimipisteitä">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Text layoutX="66.0" layoutY="608.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toimipisteen palvelut">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="txVirhe" fill="#ff0909" layoutX="72.0" layoutY="573.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Täytä kaikki kentät!">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

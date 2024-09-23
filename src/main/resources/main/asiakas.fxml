@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="asiakas.AsiakasController">
+   <children>
+      <VBox fx:id="vboxPainikkeetTekstikentat" alignment="TOP_CENTER" layoutX="8.0" prefHeight="800.0" prefWidth="269.0" spacing="15.0">
+         <children>
+            <Button fx:id="btTakaisin" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#btTakaisin" prefHeight="40.0" prefWidth="120.0" text="Takaisin">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets right="70.0" top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="lbHaeAsiakkaita" prefHeight="21.0" prefWidth="187.0" text="Hae asiakkaita">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="-10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="tfHaku" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="193.0" promptText="Hae asiakasID:llä tai sukunimellä">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+            <Label fx:id="lbUusiAsiakas" alignment="CENTER" prefHeight="49.0" prefWidth="194.0" text="Lisää uusi asiakas &amp;&#10;muokkaa asiakkaan tietoja">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="-10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="tfEtunimi" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="193.0" promptText="Etunimi" />
+            <TextField fx:id="tfSukunimi" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="193.0" promptText="Sukunimi" />
+            <TextField fx:id="tfSahkopostiosoite" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="193.0" promptText="Sähköpostiosoite" />
+            <TextField fx:id="tfPuhelinnumero" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="193.0" promptText="Puhelinnumero" />
+            <TextField fx:id="tfLahiosoite" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="193.0" promptText="Lähiosoite" />
+            <TextField fx:id="tfPostinumero" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="193.0" promptText="Postinumero" />
+            <TextField fx:id="tfPostitoimipaikka" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="193.0" promptText="Postitoimipaikka" />
+            <HBox fx:id="hboxYlaPainikkeet" alignment="CENTER" prefHeight="40.0" prefWidth="269.0" spacing="10.0">
+               <children>
+                  <Button fx:id="btLuoUusiAsiakas" mnemonicParsing="false" onAction="#btLuoUusiAsiakas" prefHeight="40.0" prefWidth="120.0" text="Lisää uusi asiakas" />
+                  <Button fx:id="btTallennaMuutokset" mnemonicParsing="false" onAction="#btTallennaMuutokset" prefHeight="40.0" prefWidth="120.0" text="Tallenna muutokset" />
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="hboxAlaPainikkeet" alignment="CENTER" prefHeight="40.0" prefWidth="269.0" spacing="10.0">
+               <children>
+                  <Button fx:id="btPoistaAsiakas" mnemonicParsing="false" onAction="#btPoistaAsiakas" prefHeight="40.0" prefWidth="120.0" text="Poista asiakas" />
+                  <Button fx:id="btTyhjennaKentat" mnemonicParsing="false" onAction="#btTyhjennaKentat" prefHeight="40.0" prefWidth="120.0" text="Tyhjennä kentät" />
+               </children>
+            </HBox>
+            <Text fx:id="txVirhe" fill="#dd3030" strokeType="OUTSIDE" strokeWidth="0.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <Label fx:id="lbAsiakkaat" layoutX="554.0" layoutY="27.0" text="Asiakkaat">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tvAsiakasTaulukko" layoutX="288.0" layoutY="106.0" prefHeight="668.0" prefWidth="964.0">
+         <placeholder>
+            <Label text="Ei asiakkaita" />
+         </placeholder>
+         <columns>
+          <TableColumn fx:id="tcAsiakasID" prefWidth="60.0" text="AsiakasID" />
+          <TableColumn fx:id="tcEtunimi" prefWidth="85.0" text="Etunimi" />
+            <TableColumn fx:id="tcSukunimi" prefWidth="91.0" text="Sukunimi" />
+            <TableColumn fx:id="tcSahkopostiosoite" prefWidth="201.0" text="Sähköpostiosoite" />
+            <TableColumn fx:id="tcPuhelinnumero" prefWidth="114.0" text="Puhelinnumero" />
+            <TableColumn fx:id="tcLahiosoite" prefWidth="197.0" text="Lähiosoite" />
+            <TableColumn fx:id="tcPostinumero" prefWidth="88.0" text="Postinumero" />
+            <TableColumn fx:id="tcPostitoimipaikka" prefWidth="127.0" text="Postitoimipaikka" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
