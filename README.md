@@ -3,7 +3,7 @@ Järjestelmän avulla toimistotiloja vuokraava yritys pystyy hallinnoimaan varau
 Tämä on kurssin Ohjelmistotuotanto 1 projektityö ja se on tehty kuuden hengen ryhmässä.
 
 ## Mistä vastasin projektissa?
-- asiakas-näkymän toteutus
+- asiakkaat-näkymän toteutus
 - teknisen toteutuksen projektijohtajana toimiminen
 - tietokannan luonti
 - tietokannan hallinta ohjelmallisesti
