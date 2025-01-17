@@ -1,6 +1,6 @@
 # Toimistotilojen varausjärjestelmä
 Järjestelmän avulla toimistotiloja vuokraava yritys pystyy hallinnoimaan varauksia, asiakkaita, toimipisteitä ja palveluja.<br>
-Tämä on kurssin Ohjelmistotuotanto 1 projektityö ja se on tehty kuuden hengen ryhmässä.
+Tämä on kurssin Ohjelmistotuotanto 1 projektityö (kevät 2024) ja se on toteutettu kuuden hengen ryhmässä.
 
 ## Mistä vastasin projektissa?
 - asiakkaat-näkymän toteutus
