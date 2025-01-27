@@ -11,15 +11,15 @@ Tämä on kurssin Ohjelmistotuotanto 1 projektityö (kevät 2024) ja se on toteu
 
 ## Toiminnot ja näkymät:
 - etusivu<br>
-<img src="src/main/resources/images/etusivu.png" width="500"><br>
+<img src="src/main/resources/images/etusivu.png" width="800"><br>
 - varausten hallinta<br>
-<img src="src/main/resources/images/varaukset.png" width="500"><br>
+<img src="src/main/resources/images/varaukset.png" width="800"><br>
 - asiakkaiden hallinta<br>
-<img src="src/main/resources/images/asiakkaat.png" width="500"><br>
+<img src="src/main/resources/images/asiakkaat.png" width="800"><br>
 - toimipisteiden hallinta<br>
-<img src="src/main/resources/images/toimipisteet.png" width="500"><br>
+<img src="src/main/resources/images/toimipisteet.png" width="800"><br>
 - palveluiden hallinta<br>
-<img src="src/main/resources/images/palvelut.png" width="500"><br>
+<img src="src/main/resources/images/palvelut.png" width="800"><br>
 
 ## Käytetyt teknologiat:
 - Java
